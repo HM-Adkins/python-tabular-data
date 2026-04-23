@@ -83,7 +83,7 @@ def species_regress(species_df_dict,
 
 if __name__ == '__main__':
     species_df_dict = filter_species(input_file = "iris.csv",
-                                     filter_column = "species")
+                                     species_column = "species")
     species_regress(species_df_dict = species_df_dict,
                     predictor = "petal_length_cm",
                     response = "sepal_length_cm")
